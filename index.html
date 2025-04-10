@@ -18,6 +18,39 @@
     <script defer src="./assets/js/main.js"></script>
   </head>
   <body>
+    <div class="container">
+      <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+      <div class="row">
+        <div class="col-4">
+            <form>
+              <div>Nome Cognome</div>
+              <input type="text" id="nome-cognome-passeggero" class="mb-3" />
+            </form>
+          </div>
+          <div class="col-4">
+            <div>Km da percorrere</div>
+            <input type="number" id="km-da-percorrere" class="mb-3" />
+          </div>
+          <div class="col-4">
+            <div>Fascia d'età</div>
+            <select name="età" id="fascia-di-eta" class="mb-3">
+              <option value="">Minorenne</option>
+              <option value="">Maggiorenne</option>
+              <option value="">Over 65</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="d-flex justify-content-center gap-3">
+            <button>GENERA</button>
+            <button>ANNULLA</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
