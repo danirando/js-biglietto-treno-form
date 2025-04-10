@@ -22,30 +22,56 @@
       <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
       <div class="row">
         <div class="col-4">
-            <form>
+          <div class="d-flex">
+            <form id="form-dati-passeggero" class="d-flex gap-4 mb-3">
               <div>Nome Cognome</div>
               <input type="text" id="nome-cognome-passeggero" class="mb-3" />
+              <div>Km da percorrere</div>
+              <input type="number" id="km-da-percorrere" class="mb-3" />
+              <div>Fascia d'età</div>
+              <select name="età" id="fascia-di-eta" class="mb-3">
+                <option value="Minorenne">Minorenne</option>
+                <option value="Maggiorenne">Maggiorenne</option>
+                <option value="Over 65">Over 65</option>
+              </select>
+              <button class="btn btn-primary">GENERA</button>
+              <button id="btn-annulla" class="btn btn-secondary">
+                ANNULLA
+              </button>
             </form>
-          </div>
-          <div class="col-4">
-            <div>Km da percorrere</div>
-            <input type="number" id="km-da-percorrere" class="mb-3" />
-          </div>
-          <div class="col-4">
-            <div>Fascia d'età</div>
-            <select name="età" id="fascia-di-eta" class="mb-3">
-              <option value="">Minorenne</option>
-              <option value="">Maggiorenne</option>
-              <option value="">Over 65</option>
-            </select>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-12">
-          <div class="d-flex justify-content-center gap-3">
-            <button>GENERA</button>
-            <button>ANNULLA</button>
+          <div class="card d-none" id="card-biglietto">
+            <h2>DETTAGLIO PASSEGGERI</h2>
+            <div class="row">
+              <div class="col-4">
+                <h5>NOME PASSEGGERO</h5>
+                <div id="nome-passeggero-biglietto"></div>
+              </div>
+              <div class="col-8">
+                <div class="row">
+                  <div class="col-3">
+                    <h6>Offerta</h6>
+                    <div id="tipo-offerta"></div>
+                  </div>
+                  <div class="col-3">
+                    <h6>Carrozza</h6>
+                    <div>5</div>
+                  </div>
+                  <div class="col-3">
+                    <h6>Codice CP</h6>
+                    <div>CP 548392</div>
+                  </div>
+                  <div class="col-3">
+                    <h6>Costo Biglietto</h6>
+                    <div id="costo-biglietto"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
