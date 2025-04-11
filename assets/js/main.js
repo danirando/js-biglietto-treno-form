@@ -56,5 +56,6 @@ formDatiEl.addEventListener("submit", function (event) {
 });
 
 buttonAnnullaEl.addEventListener("click", function () {
+  cardBigliettoEl.classList.add("d-none");
   formDatiEl.reset();
 });
